@@ -39,7 +39,7 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage, createRedirect } = actions;
 
         // static routes
-        createRedirect({ redirectInBrowser: true, fromPath: '/docs', toPath: 'https://bitcoinpy.io/docs/', isPermanent: false })
+        createRedirect({ redirectInBrowser: true, fromPath: '/docs', toPath: 'https://bitcoinpy.github.io/docs/', isPermanent: false })
         createRedirect({ redirectInBrowser: true, fromPath: '/github', toPath: 'https://github.com/pycontracts/', isPermanent: false })
         createRedirect({ redirectInBrowser: true, fromPath: '/bct', toPath: 'https://bitcointalk.org', isPermanent: false })
 
