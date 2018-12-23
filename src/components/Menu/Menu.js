@@ -28,6 +28,7 @@ class Menu extends React.Component {
     ];
 
     this.extitems = [
+      { to: "/docs/", label: "Documentation" },
       { to: "https://github.com/pycontracts", label: "Github" },
       { to: "https://bitcointalk.org", label: "Bitcointalk" }
     ];

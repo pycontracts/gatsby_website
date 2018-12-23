@@ -35,7 +35,7 @@ class Header extends React.Component {
 
     return (
       <React.Fragment>
-        <header className={`header ${this.getHeaderSize()}`}>
+        <header className={`header homepage ${this.getHeaderSize()}`}>
           <Link to="/" className="logoType">
             <div className="type">
               <h1>{config.headerTitle}<span>{config.headerTitle2}</span></h1>
