@@ -23,10 +23,7 @@ class Menu extends React.Component {
     }));
 
     this.items = [
-      { to: "/", label: "Home" },
-      ...pages,
-      { to: "http://github.com/second_layer", label: "Github" },
-      { to: "http://bitcointalk.org", label: "Bitcointalk" }, 
+      { to: "/", label: "Home" }
     ];
 
     this.renderedItems = []; // will contain references to rendered DOM elements of menu
@@ -148,6 +145,8 @@ class Menu extends React.Component {
             {this.items.map(item => (
               <Item item={item} key={item.label} icon={item.icon} theme={theme} />
             ))}
+            <li><a href="http://github.com/pycontracts">GitHub</a></li>
+            <li><a href="http://bitcointalk.org">Bitcointalk</a></li>
           </ul>
           {this.state.hiddenItems.length > 0 && <Expand onClick={this.toggleMenu} theme={theme} />}
           {open &&
