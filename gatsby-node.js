@@ -36,7 +36,12 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 };
 
 exports.createPages = ({ graphql, actions }) => {
-  const { createPage } = actions;
+  const { createPage, createRedirect } = actions;
+
+        // static routes
+        createRedirect({ redirectInBrowser: true, fromPath: '/docs', toPath: 'https://bitcoinpy.io/docs/', isPermanent: false })
+        createRedirect({ redirectInBrowser: true, fromPath: '/github', toPath: 'https://github.com/pycontracts/', isPermanent: false })
+        createRedirect({ redirectInBrowser: true, fromPath: '/bct', toPath: 'https://bitcointalk.org', isPermanent: false })
 
   return new Promise((resolve, reject) => {
     const postTemplate = path.resolve("./src/templates/PostTemplate.js");
@@ -109,6 +114,7 @@ exports.createPages = ({ graphql, actions }) => {
             }
           });
         });
+
 
         // and pages.
         const pages = items.filter(item => item.node.fields.source === "pages");

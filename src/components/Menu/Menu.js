@@ -9,7 +9,6 @@ import { FaTag } from "react-icons/fa/";
 
 import Item from "./Item";
 import Expand from "./Expand";
-import ExternItem from "./Item";
 
 class Menu extends React.Component {
   constructor(props) {
@@ -24,13 +23,10 @@ class Menu extends React.Component {
     }));
 
     this.items = [
-      { to: "/", label: "Home" }
-    ];
-
-    this.extitems = [
-      { to: "/docs/", label: "Documentation" },
-      { to: "https://github.com/pycontracts", label: "Github" },
-      { to: "https://bitcointalk.org", label: "Bitcointalk" }
+      { to: "/", label: "Home" },
+      { to: "/docs", label: "Documentation" },
+      { to: "/github", label: "Github" },
+      { to: "/bct", label: "Bitcointalk" }
     ];
 
     this.renderedItems = []; // will contain references to rendered DOM elements of menu
@@ -147,13 +143,10 @@ class Menu extends React.Component {
 
     return (
       <React.Fragment>
-        <nav className={`menu ${open ? "open" : ""}`} rel="js-menu">
+          <nav className={`menu ${open ? "open" : ""}`} rel="js-menu">
           <ul className="itemList" ref={this.itemList}>
             {this.items.map(item => (
               <Item item={item} key={item.label} icon={item.icon} theme={theme} />
-            ))}
-            {this.extitems.map(item => (
-              <ExternItem item={item} key={item.label} icon={item.icon} theme={theme} />
             ))}
           </ul>
           {this.state.hiddenItems.length > 0 && <Expand onClick={this.toggleMenu} theme={theme} />}

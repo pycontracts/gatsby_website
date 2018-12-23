@@ -14,7 +14,7 @@ const Hero = props => {
         </h1>
         <img src="screenshot.png" />
         <p className="whitelabels">
-        going live soon | scroll down for more | <a href=''>check out the sneek peek video</a>
+        going live soon | scroll down for more | <a href='/sneekpeek'>check out the sneek peek video</a>
         </p>
       </section>
       <section className="featured-area">
