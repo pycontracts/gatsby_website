@@ -9,6 +9,7 @@ import { FaTag } from "react-icons/fa/";
 
 import Item from "./Item";
 import Expand from "./Expand";
+import ExternItem from "./Item";
 
 class Menu extends React.Component {
   constructor(props) {
@@ -24,6 +25,11 @@ class Menu extends React.Component {
 
     this.items = [
       { to: "/", label: "Home" }
+    ];
+
+    this.extitems = [
+      { to: "https://github.com/pycontracts", label: "Github" },
+      { to: "https://bitcointalk.org", label: "Bitcointalk" }
     ];
 
     this.renderedItems = []; // will contain references to rendered DOM elements of menu
@@ -145,8 +151,9 @@ class Menu extends React.Component {
             {this.items.map(item => (
               <Item item={item} key={item.label} icon={item.icon} theme={theme} />
             ))}
-            <li><a href="http://github.com/pycontracts">GitHub</a></li>
-            <li><a href="http://bitcointalk.org">Bitcointalk</a></li>
+            {this.extitems.map(item => (
+              <ExternItem item={item} key={item.label} icon={item.icon} theme={theme} />
+            ))}
           </ul>
           {this.state.hiddenItems.length > 0 && <Expand onClick={this.toggleMenu} theme={theme} />}
           {open &&
