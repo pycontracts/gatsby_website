@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 const ExternItem = props => {
 
 
-  const { theme, item: { label, to, icon: Icon } = {}, onClick } = props;
+  const { theme, item: { label, to, icon: Icon } = {} } = props;
 
   return (
     <React.Fragment>
@@ -98,7 +98,6 @@ const ExternItem = props => {
 Item.propTypes = {
   item: PropTypes.object,
   hidden: PropTypes.bool,
-  onClick: PropTypes.func,
   icon: PropTypes.func,
   theme: PropTypes.object.isRequired
 };
