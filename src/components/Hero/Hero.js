@@ -27,7 +27,7 @@ const Hero = props => {
                 </div>
                 <div className="desc text-center">
                   <h6 className="title text-uppercase">Runs on the Bitcoin Blockchain</h6>
-                  <p>There are roughtly 10000 blockchains out there, and most of them are either abandoned or their security has more holes in it than swiss cheese. We, therefore, did not reinvent the wheel. Why not make use of an already adopted, highly tested and byzantinely stable blockchain? That is what we did. We have build an entire contract ecosystem on top of the original Bitcoin blockchain. The blockchain is not managed by us and the likelyhood of attacks, that are typically targeted at new chains with low adoption such as the fifty-percent attack, is negligible. BitcoinPy is no hard- or softfork, and therefore 100% compatible with other non-BitcoinPy nodes.</p>
+                  <p>With so many new blockchain solutions popping out of the woodwork every day, and the Bitcoin hard fork frenzy we have just recently experience, we felt it's time to improve upon existing solutions. So, why not make use of an already adopted Blockchain, which is already thoroughly tested and has a strong consensus? That is what we did. We have built an entire contract ecosystem on top of the original Bitcoin blockchain. We do not manage the blockchain and the likelihood of attacks, that usually targeted at chains with low adoption such as the fifty-percent attack, is negligible. BitcoinPy is no hard- or soft fork, and therefore 100% compatible with all other, traditional and unmodified Bitcoin clients.</p>
                 </div>
               </div>
             </div>
@@ -38,7 +38,7 @@ const Hero = props => {
                 </div>
                 <div className="desc text-center">
                   <h6 className="title text-uppercase">Easy Contracts in Python</h6>
-                  <p>PyContracts are written in Python and there is no need to master yet another contract-specific language first. This not only allows users to get started fast as they do not have to learn an entirely new programming language, but it also reduces the chance for errors and programming mistakes. Contract developers do not need to bother about complex toolchains, obscure NodeJS based deployment hassles, and other emotionally depressing sensations any longer. Just code your smart contract using your favourite editor and a Python shell. And if you are comfortable with the result, just upload it to the blockchain at the click of a button. </p>
+                  <p>BitcoinPy features smart contracts that are written in Python. As most developers are already familiar with it, the entry barrier is quite low as there is no need to master yet another contract-specific language first. Not only can we assume, that the number of accidental contract bugs is likely to be lesser compared to other platforms with more complex, novel programming languages, but contract developers also do not need to bother about complex nodejs-based toolchains, browser-based development IDEs, or other deployment nightmares. Just code your smart contract using your favorite editor and a Python shell and if you are comfortable with the result, upload it to the blockchain at the click of a button. </p>
                 </div>
               </div>
             </div>
@@ -49,7 +49,7 @@ const Hero = props => {
                 </div>
                 <div className="desc text-center">
                   <h6 className="title text-uppercase">What Fuels the Contracts</h6>
-                  <p>While traditional BTC, for obvious reasons, are required to pay for the transaction fees on the Bitcoin blockchain, GAS is used by those who call a contract to pay for the CPU time a contract needs to execute. You can see GAS as the fuel for the Python VM. As a rule of thumb: the more complex a contract is, the more resources it eats up at the nodes, the more GAS the execution costs. The reason why we decided to add GAS and not just rely on BTC is to prevent contracts from becoming economocally useless due to a too high Bitcoin price. Sending GAS and creating contracts, regardless of their size, does not cost anything except the BTC transaction fee.</p>
+                  <p>While traditional BTC, for obvious reasons, is required to pay for the transaction fees on the Bitcoin blockchain, GAS - a new token that is also stored purely on the Bitcoin blockchain - is used by those who call a contract to pay for the CPU time a contract needs to execute. You can see GAS as the fuel for the Python VM; the more complex a contract is, the more resources it eats up when the nodes execute it, the more GAS the execution costs. However, sending GAS and creating contracts, regardless of their size, does not cost beyond the BTC transaction fee. The reason we need to use GAS, and cannot rely on BTC only, is that contracts can produce multiple internal transactions, e.g., paying multiple users from the contract's balance.</p>
                 </div>
               </div>
             </div>
@@ -60,7 +60,7 @@ const Hero = props => {
                 </div>
                 <div className="desc text-center">
                   <h6 className="title text-uppercase">No ICO, No Premine, No Baloney</h6>
-                  <p>We have seen numerous projects getting funded by quadrillions of dollars with either no product, a questionably mediocre product or a product that we could code during one day on a netbook in the trailer park. We reject this. However, since many actors are still looking for the ultimate killer application for Bitcoin and we know how to do it, we decided to create a whole contract-ecosystem on the original Bitcoin blockchain. No ICO, no premine, no bonuses, no signature campaigns, no baloney. BitcoinPy launches with no GAS in circulation at all. If you want it, you have to mine it yourself.</p>
+                  <p>Over the past two years, we have experienced an influx of mediocre projects that seemed to have a strong focus on marketing - purportedly to achieve a good income from their initial coin offering - rather than on writing good code and improving upon the Blockchain as such. We want this project to be all about the technology without any other disruptions. Therefore, it is paramount to us, that the entire development of this program is truly "libre." There will be no initial coin offering, no pre-mine, no bonuses, no signature campaigns, and no paid-developers who work for the money and not for the greater cause. BitcoinPy launches with no GAS in circulation at all. And if you want some GAS, you have to mine it yourself.</p>
                 </div>
               </div>
             </div>
@@ -71,7 +71,7 @@ const Hero = props => {
                 </div>
                 <div className="desc text-center">
                   <h6 className="title text-uppercase">Secure Python VM</h6>
-                  <p>All Bitcoin Core clients with the BitcoinPy extension have an integrated Python VM, which is highly modified in order to ensure integrity and correctness of the results. Furthermore, it not only limits the CPU instructions depending on how much GAS was supplied, but also provides a nice interface for developers to access the blockchain's metadata such as the current block, the sender and amount, and others directly from within contract. Also, the VM supports most of the typical contract abortion methods, such as reverting and suiciding, that we are already used-to from Ethereum.</p>
+                  <p>All Bitcoin Core clients with the BitcoinPy extension have an integrated Python VM, which runs the smart contracts and which is highly modified to ensure integrity and correctness of the results on numerous architectures. Furthermore, it not only limits the CPU instructions depending on how much GAS is supplied by the contract caller, but also provides a friendly interface for developers to access the blockchain's metadata such as the current block, the sender and amount, and others parameters directly from within the contract. Also, the VM supports most of the typical contract abortion methods, such as reverting and suiciding, that we are already used to from Ethereum.</p>
                 </div>
               </div>
             </div>
